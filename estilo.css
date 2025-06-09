@@ -2,6 +2,18 @@
     border: red 0px solid;
 }
 
+@font-face {
+    font-family: 'flowers_kingdom';
+    font-style: normal;
+    src: url('Fuentes/flowers_kingdom.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'anak_paud';
+    font-style: normal;
+    src: url('Fuentes/anak_paud.ttf') format('truetype');
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -109,9 +121,17 @@ h3 {
   z-index: 100;
 }
 
+#fondo-form img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 30px;
+}
+
 #acceso {
   position: fixed;
-  bottom: 90px; /* Ajusta este valor para que no se monte sobre el footer */
+  bottom: 85px; /* Ajusta este valor para que no se monte sobre el footer */
   left: 20px;
   z-index: 1000;
   background-color: #afdaff;
@@ -226,8 +246,8 @@ h3 {
 }
 
 #convocatorias h2 {
-  color: #000000;
-  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+ font-family: 'anak_paud';
   margin-top: 20px;
   margin-bottom: 8px;
   font-size: 4rem;
@@ -373,6 +393,7 @@ h3 {
   border-radius: 10px;
   pointer-events: none;
   text-align: center;
+  font-family: 'anak_paud';
   transition: transform 0.3s ease; /* transición para agrandar */
   cursor: default;
 }
@@ -448,9 +469,10 @@ h3 {
 }
 
 #vault-artistas h2 {
+  font-family: 'anak_paud';
   font-size: 4rem;
   margin-bottom: 10px;
-  color: #000000;
+  color: #ffffff;
 }
 
 #vault-artistas hr {
@@ -479,6 +501,7 @@ h3 {
 }
 #vault-artistas h5 {
   font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
   color: #000000;
   margin-bottom: 40px;
 }
@@ -539,6 +562,7 @@ h3 {
   border: 2px solid #6649a6;
   margin-top: 10px;
   margin-bottom: 0;
+  font-family: open-sans, sans-serif;
 }
 
 .artista-vault a {
@@ -656,15 +680,9 @@ h3 {
 #artista5:checked ~ .carrusel2 .carrusel2-items { transform: translateX(-400%); }
 #artista6:checked ~ .carrusel2 .carrusel2-items { transform: translateX(-500%); }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding-top: 80px; 
-    background-color: #afdaff;
-}
 h2{
-    color: #000000;
-    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-family: 'anak_paud';
     text-align: center;
     margin-top: 20px;
     font-size: 3rem;
@@ -733,7 +751,7 @@ h2{
 #texto_perfil h2 {
   margin: 0 0 8px;
   font-size: 50px;
-  color: #000000;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -741,7 +759,8 @@ h2{
   margin: 0;
   margin-top: -10px;
   font-size: 23px;
-  color: #000000;
+  color: #ffffff;
+  font-family: 'anak_paud';
   font-weight: normal;
 }
 
@@ -839,6 +858,193 @@ input[type="checkbox"] {
 #modal5:checked ~ #m5,
 #modal6:checked ~ #m6 {
   display: flex;
+}#galeria {
+  padding: 0 80px 40px;
+  background-color: #afdaff;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Banner morado (ahora ocupa todo el ancho del contenedor) */
+#texto_galeria {
+  background-color: #5c468c;
+  padding: 60px 40px;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 100px; /* espacio para el header */
+  margin-top: -50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+}
+
+#texto_galeria h2 {
+  margin: 0;
+  font-size: 6rem;
+}
+
+#texto_galeria h3 {
+  margin-top: 10px;
+  font-family: anak_paud;
+  font-weight: normal;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+/* Contenedor de las dos imágenes iniciales */
+.imagenes-inicio {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Galería de imágenes */
+.galeria-imagenes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.galeria-imagenes img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.galeria-imagenes img:hover {
+  transform: scale(1.1);
+}
+
+/* --- Código hover tomado de trabajos personales --- */
+#trabajos_personales {
+  border-radius: 20px;
+  padding: 40px 40px;
+  background-color: #5c468c;
+  margin: 200px 180px 60px 180px;
+  text-align: center;
+}
+
+.datos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.datos label {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: block;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.datos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.datos label:hover img {
+  transform: scale(1.1);
+}
+
+/* Checkbox oculto */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Modal que se superpone a todo, incluso el header */
+.modal-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* MUY alto para ir encima del header */
+  cursor: pointer;
+}
+
+.modal-img img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  object-fit: contain;
+  animation: zoomIn 0.2s ease-out;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Mostrar el modal cuando el checkbox está marcado */
+#modal1:checked ~ #m1,
+#modal2:checked ~ #m2,
+#modal3:checked ~ #m3,
+#modal4:checked ~ #m4,
+#modal5:checked ~ #m5,
+#modal6:checked ~ #m6,
+#modal7:checked ~ #m7,
+#modal8:checked ~ #m8,
+#modal9:checked ~ #m9,
+#modal10:checked ~ #m10,
+#modal11:checked ~ #m11,
+#modal12:checked ~ #m12,
+#modal13:checked ~ #m13,
+#modal14:checked ~ #m14,
+#modal15:checked ~ #m15,
+#modal16:checked ~ #m16,
+#modal17:checked ~ #m17,
+#modal18:checked ~ #m18,
+#modal19:checked ~ #m19,
+#modal20:checked ~ #m20,
+#modal21:checked ~ #m21,
+#modal22:checked ~ #m22,
+#modal23:checked ~ #m23,
+#modal24:checked ~ #m24,
+#modal25:checked ~ #m25,
+#modal26:checked ~ #m26,
+#modal27:checked ~ #m27,
+#modal28:checked ~ #m28
+{
+  display: flex;
+}
+
+
+
+/* Fuente y fondo general */
+body {
+  font-family: 'anak_paud';
+  margin: 0;
+  padding-top: 80px;
+  background-color: #afdaff;
 }
 
 
