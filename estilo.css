@@ -753,6 +753,7 @@ h2{
   font-size: 50px;
   color: #ffffff;
   font-weight: 700;
+  -webkit-text-stroke: 1px black; 
 }
 
 #texto_perfil h4 {
@@ -762,6 +763,7 @@ h2{
   color: #ffffff;
   font-family: 'anak_paud';
   font-weight: normal;
+  -webkit-text-stroke: 0.7px black;
 }
 
 /* TRABAJOS */
