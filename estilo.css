@@ -1,4 +1,6 @@
-
+* {
+    border: red 0px solid;
+}
 
 html {
   scroll-behavior: smooth;
