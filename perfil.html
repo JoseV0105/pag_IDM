@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="inicio">
+               <a href="principal.html"><img src="imagenes/logos/OIP.png" alt="Logo IDM" width="80" loading="lazy"/></a>
+        <nav id="main-menu">
+            <ul>
+                <li><a href="idm_info.html">IDM INFO</a></li>
+                <li><a href="perfil.html">PERFIL</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="pantalla_perfil">
+        <div id="fondo_perfil">
+            <img src="imagenes/trabajos_p/banne.jpeg" alt="Fondo de perfil" loading="lazy">
+        </div>
+        <div id="foto_perfil">
+            <img src="imagenes/trabajos_p/cam.jpeg" alt="Foto de perfil" loading="lazy">
+        </div>
+        <div id="texto_perfil">
+            <h2>APODO DE USUARIO</h2>
+            <H4>@nombre de alumno completo</H4>
+        </div>
+    </section>
+    <!-- Checkboxes ocultos para control -->
+<input type="checkbox" id="modal1">
+<input type="checkbox" id="modal2">
+<input type="checkbox" id="modal3">
+<input type="checkbox" id="modal4">
+<input type="checkbox" id="modal5">
+<input type="checkbox" id="modal6">
+
+<section id="trabajos_personales">
+  <div class="datos">
+    <label for="modal1"><img src="imagenes/trabajos_p/dibujo1.jpeg" alt="trabajo1"></label>
+    <label for="modal2"><img src="imagenes/trabajos_p/dibujo2.jpeg" alt="trabajo2"></label>
+    <label for="modal3"><img src="imagenes/trabajos_p/dibujo3.jpeg" alt="trabajo3"></label>
+    <label for="modal4"><img src="imagenes/trabajos_p/dibujo4.jpeg" alt="trabajo4"></label>
+    <label for="modal5"><img src="imagenes/trabajos_p/dibujo5.jpeg" alt="trabajo5"></label>
+    <label for="modal6"><img src="imagenes/trabajos_p/dibujo6.jpeg" alt="trabajo6"></label>
+  </div>
+</section>
+
+<!-- Modales (uno por imagen) -->
+<label id="m1" class="modal-img" for="modal1"><img src="imagenes/trabajos_p/dibujo1.jpeg" alt="ampliado1"></label>
+<label id="m2" class="modal-img" for="modal2"><img src="imagenes/trabajos_p/dibujo2.jpeg" alt="ampliado2"></label>
+<label id="m3" class="modal-img" for="modal3"><img src="imagenes/trabajos_p/dibujo3.jpeg" alt="ampliado3"></label>
+<label id="m4" class="modal-img" for="modal4"><img src="imagenes/trabajos_p/dibujo4.jpeg" alt="ampliado4"></label>
+<label id="m5" class="modal-img" for="modal5"><img src="imagenes/trabajos_p/dibujo5.jpeg" alt="ampliado5"></label>
+<label id="m6" class="modal-img" for="modal6"><img src="imagenes/trabajos_p/dibujo6.jpeg" alt="ampliado6"></label>
+
+        <footer id="derechos">
+        <p>&copy; 2025 estudiantes unacar gestión de proyectos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

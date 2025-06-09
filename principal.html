@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="inicio">
+        <a href="#convocatorias"><img src="imagenes/logos/OIP.png" alt="Logo IDM" width="80" loading="lazy"/></a>
+        <nav id="main-menu">
+            <ul>
+                <li><a href="https://www.unacar.mx/" target="_blank">UNACAR</a></li>
+                <li><a href="idm_info.html">IDM INFO</a></li>
+                <li><a href="perfil.html">PERFIL</a></li>
+            </ul>
+        </nav>
+    </header>
+<section id="convocatorias">
+  <h2>CONVOCATORIAS</h2>
+
+  <!-- Inputs radio -->
+  <input type="radio" id="convocatoria1" name="habilidad" checked>
+  <input type="radio" id="convocatoria2" name="habilidad">
+  <input type="radio" id="convocatoria3" name="habilidad">
+  <input type="radio" id="convocatoria4" name="habilidad">
+  <input type="radio" id="convocatoria5" name="habilidad">
+  <input type="radio" id="convocatoria6" name="habilidad">
+  <input type="radio" id="convocatoria7" name="habilidad">
+
+  <!-- Navegación -->
+  <div class="carrusel-navegacion">
+    <label for="convocatoria1"></label>
+    <label for="convocatoria2"></label>
+    <label for="convocatoria3"></label>
+    <label for="convocatoria4"></label>
+    <label for="convocatoria5"></label>
+    <label for="convocatoria6"></label>
+    <label for="convocatoria7"></label>
+  </div>
+
+  <!-- Carrusel -->
+  <div class="carrusel">
+    <div class="carrusel-items">
+      <div class="carrusel-item"><img src="imagenes/avisos/aviso1.jpg" alt="1" loading="lazy"></div>
+      <div class="carrusel-item"><img src="imagenes/avisos/aviso2.jpg" alt="2" loading="lazy"></div>
+      <div class="carrusel-item"><img src="imagenes/avisos/aviso3.jpg" alt="3" loading="lazy"></div>
+      <div class="carrusel-item"><img src="imagenes/avisos/aviso4.jpg" alt="4" loading="lazy"></div>
+      <div class="carrusel-item"><img src="imagenes/avisos/aviso5.jpg" alt="5" loading="lazy"></div>
+      <div class="carrusel-item"><img src="imagenes/avisos/aviso6.jpg" alt="6" loading="lazy"></div>
+      <div class="carrusel-item"><img src="imagenes/avisos/aviso7.jpg" alt="7" loading="lazy"></div>
+    </div>
+  </div>
+  <script>
+  const radios = [
+    document.getElementById('convocatoria1'),
+    document.getElementById('convocatoria2'),
+    document.getElementById('convocatoria3'),
+    document.getElementById('convocatoria4'),
+    document.getElementById('convocatoria5'),
+    document.getElementById('convocatoria6'),
+    document.getElementById('convocatoria7'),
+  ];
+
+  let current = 0;
+
+  setInterval(() => {
+    current = (current + 1) % radios.length;
+    radios[current].checked = true;
+  }, 6000);
+</script>
+
+</section>
+
+<section id="otro">
+  <div class="content-wrapper">
+    <div class="eventos">
+      <img src="imagenes/otros/evento.jpg" alt="Evento principal" loading="lazy">
+      <h3>EVENTOS</h3>
+    </div>
+    <div class="lado-derecho">
+      <div>
+        <img src="imagenes/otros/concurso.jpg" alt="Evento pequeño 1" loading="lazy">
+        <h3>CONCURSOS</h3>
+      </div>
+      <div>
+        <img src="imagenes/otros/conferencia.jpg" alt="Evento pequeño 2" loading="lazy">
+        <h3>CONFERENCIAS</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+     <section id="vault-artistas">
+  <h2>El VAULT DE LOS ARTISTAS</h2>
+  <hr>
+  <h5>¡Recuerda votar por tus artistas favoritos, para que aparezcan en el ranking de la semana!</h5>
+
+  <!-- Primer grupo de 3 -->
+  <div class="contenedor-vault-artistas">
+    <div class="artista-vault">
+      <img src="imagenes/vault/ilustracion.jpeg" alt="ilustraciones" loading="lazy">
+      <h3>Ilustraciones 2D</h3>
+      <a href="galeria_animaciones.html" class="redes" target="_blank"><h4>¡Entrar a la galería!</h4></a>
+    </div>
+    <div class="artista-vault">
+      <img src="imagenes/vault/modelado.jpeg" alt="modelados" loading="lazy">
+      <h3>Modelados 3D</h3>
+      <a href="galeria_modelado.html" class="redes" target="_blank"><h4>¡Entrar a la galería!</h4></a>
+    </div>
+    <div class="artista-vault">
+      <img src="imagenes/vault/animacion.jpeg" alt="animaciones" loading="lazy">
+      <h3>Animaciones</h3>
+      <a href="galeria_animaciones.html" class="redes" target="_blank"><h4>¡Entrar a la galería!</h4></a>
+    </div>
+  </div>
+
+  <!-- Segundo grupo de 3 -->
+  <div class="contenedor-artistas grupo-abajo">
+    <div class="artista-vault">
+      <img src="imagenes/vault/fotografia.jpg" alt="fotografías" loading="lazy">
+      <h3>Fotografías</h3>
+      <a href="galeria_fotografia.html" class="redes" target="_blank"><h4>¡Entrar a la galería!</h4></a>
+    </div>
+    <div class="artista-vault">
+      <img src="imagenes/vault/diseño.jpeg" alt="diseños" loading="lazy">
+      <h3>Diseños</h3>
+      <a href="galeria_diseños.html" class="redes" target="_blank"><h4>¡Entrar a la galería!</h4></a>
+    </div>
+    <div class="artista-vault">
+      <img src="imagenes/vault/cortometraje.jpeg" alt="cortometrajes" loading="lazy">
+      <h3>Cortometrajes</h3>
+      <a href="galeria_cortometrajes.html" class="redes" target="_blank"><h4>¡Entrar a la galería!</h4></a>
+    </div>
+  </div>
+</section>
+
+    
+<section id="artistas">
+  <h2>ARTISTAS DE LA SEMANA</h2>
+
+  <!-- Radio Buttons deben ir aquí, dentro del carrusel -->
+  <input type="radio" id="artista1" name="artista" checked>
+  <input type="radio" id="artista2" name="artista">
+  <input type="radio" id="artista3" name="artista">
+  <input type="radio" id="artista4" name="artista">
+  <input type="radio" id="artista5" name="artista">
+  <input type="radio" id="artista6" name="artista">
+
+  <!-- Navegación arriba -->
+  <div class="carrusel2-navegacion">
+    <label for="artista1"></label>
+    <label for="artista2"></label>
+    <label for="artista3"></label>
+    <label for="artista4"></label>
+    <label for="artista5"></label>
+    <label for="artista6"></label>
+  </div>
+
+  <!-- Carrusel con las imágenes -->
+  <div class="carrusel2">
+    <div class="carrusel2-items">
+      <div class="carrusel2-item">
+        <div class="imagen">
+          <img src="imagenes/aristas/Satanicamz.jpg" alt="1" loading="lazy">
+        </div>
+      </div>
+
+      <div class="carrusel2-item">
+        <div class="imagen">
+          <img src="imagenes/aristas/wfox.jpg" alt="2" loading="lazy">
+        </div>
+      </div>
+
+      <div class="carrusel2-item">
+        <div class="imagen">
+          <img src="imagenes/aristas/vah.jpeg" alt="3" loading="lazy">
+        </div>
+      </div>
+
+      <div class="carrusel2-item">
+        <div class="imagen">
+          <img src="imagenes/aristas/Izukxti.jpeg" alt="4" loading="lazy">
+        </div>
+      </div>
+
+      <div class="carrusel2-item">
+        <div class="imagen">
+          <img src="imagenes/aristas/fotow.jpeg" alt="5" loading="lazy">
+        </div>
+      </div>
+
+      <div class="carrusel2-item">
+        <div class="imagen">
+          <img src="imagenes/aristas/axl.jpeg" alt="6" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  const artistaRadios = [
+    document.getElementById('artista1'),
+    document.getElementById('artista2'),
+    document.getElementById('artista3'),
+    document.getElementById('artista4'),
+    document.getElementById('artista5'),
+    document.getElementById('artista6'),
+  ];
+
+  let currentArtista = 0;
+
+  setInterval(() => {
+    currentArtista = (currentArtista + 1) % artistaRadios.length;
+    artistaRadios[currentArtista].checked = true;
+  }, 6000);
+</script>
+</section>
+
+    <footer id="derechos">
+        <p>&copy; 2025 estudiantes unacar gestión de proyectos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
